@@ -6,6 +6,13 @@ def main(list_num):
     Returns:
         int: return answer
     """
-    return list_num[0]
+    max = 0
 
-print(main([0, 3, 'w', 'ss']))
+    if list_num[0] <= list_num[-1]:
+        max += list_num[-1]
+    else:
+        max += list_num[0]
+
+    return max
+
+print(main([7, 2, 3, 4, 6, 5]))
